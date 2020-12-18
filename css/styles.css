@@ -1,0 +1,219 @@
+/* RESET RELOAD */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* RESET RELOAD - END */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+/************************************* HEADER *******************************/
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	width: 75%;
+	height: auto;
+
+}
+
+.container {
+	display: flex;
+	position: relative;
+	text-align: center;
+	z-index: -1;
+
+}
+
+.main-title {
+	/* display: absolute; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+/* .picture-in-header {
+	display: relative;
+} */
+
+/* TOGGLE MENU  */
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  z-index: 200000;
+}
+
+.toggle:before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  /* border-radius: 50%; */
+  background: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+	border: solid 1px;
+}
+
+.toggle.active:before {
+  transform: rotate(405deg);
+  background: white;
+  color: #000;
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%; */
+  background: rgba(0, 0, 0, 0.95);
+  transition: transform 0.5s;
+}
+.overlay.active {
+  transform: scale(15, 30);
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.menu.active {
+  position: absolute;
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+.menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  position: relative;
+  font-size: 48px;
+  text-decoration: none;
+  color: #fff;
+  margin: 20px 0;
+  display: block;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  font-family: sans-serif;
+}
+
+.menu ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: -10px;
+  width: 100%;
+  height: 20px;
+  background: #ffeb3b;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.menu ul li a:hover:before {
+  transform: scaleX(1);
+}
+
+/* TOGGLE MENU END */
+
+
+/************************************** MAIN  *******************************/
+.main-part {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+/********************************** MAIN  END*******************************/
+
+/******************************** FOOTER ***********************************/
+.footer-section {
+	text-align: center;
+}
+/******************************** FOOTER END*********************************/
