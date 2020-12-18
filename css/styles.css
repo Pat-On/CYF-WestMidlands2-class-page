@@ -1,5 +1,4 @@
 /* RESET RELOAD */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -8,88 +7,91 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
+
 /* remember to define focus styles! */
 :focus {
-	outline: 0;
+  outline: 0;
 }
+
 body {
-	line-height: 1;
-	color: black;
-	background: white;
+  line-height: 1;
+  color: black;
+  background: white;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-	border-collapse: separate;
-	border-spacing: 0;
+  border-collapse: separate;
+  border-spacing: 0;
 }
+
 caption, th, td {
-	text-align: left;
-	font-weight: normal;
+  text-align: left;
+  font-weight: normal;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: "";
+  content: "";
 }
-blockquote, q {
-	quotes: "" "";
-}
-/* RESET RELOAD - END */
 
+blockquote, q {
+  quotes: """";
+}
+
+/* RESET RELOAD - END */
 img {
   width: 100%;
   height: auto;
 }
 
-
 /************************************* HEADER *******************************/
-
 header {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
-	width: 75%;
-	height: auto;
-
+  width: 75%;
+  height: auto;
 }
 
 .container {
-	display: flex;
-	position: relative;
-	text-align: center;
-	z-index: -1;
-
+  display: flex;
+  position: relative;
+  text-align: center;
+  z-index: -1;
 }
 
 .main-title {
-	/* display: absolute; */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	font-size: 3rem;
-	font-weight: bold;
+  /* display: absolute; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Sacramento', cursive;
 }
 
 /* .picture-in-header {
 	display: relative;
 } */
-
 /* TOGGLE MENU  */
 .toggle {
   position: absolute;
@@ -118,7 +120,7 @@ header {
   background: #fff;
   font-weight: bold;
   transition: 0.5s;
-	border: solid 1px;
+  border: solid 1px;
 }
 
 .toggle.active:before {
@@ -137,8 +139,9 @@ header {
   background: rgba(0, 0, 0, 0.95);
   transition: transform 0.5s;
 }
+
 .overlay.active {
-  transform: scale(15, 30);
+  transform: scale(30, 30);
 }
 
 .menu {
@@ -199,21 +202,71 @@ header {
 }
 
 /* TOGGLE MENU END */
-
-
 /************************************** MAIN  *******************************/
 .main-part {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
-
 
 /********************************** MAIN  END*******************************/
-
-/******************************** FOOTER ***********************************/
-.footer-section {
-	text-align: center;
+/* First Section */
+h2 {
+  margin: 3% 0 3% 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
 }
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+	padding-bottom: 10px;
+}
+
+p {
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  line-height: 2;
+  margin: auto;
+}
+
+.first-section {}
+
+/* First Section END */
+/* Second Section */
+.second-section {
+  background-color: #d9d9d9;
+}
+.student-volunteer-list {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+
+.student-volunteer-list li {
+	padding: 3%;
+}
+
+/* Second section end */
+/* Third Section */
+/* Third Section END */
+/******************************** FOOTER ***********************************/
+h4 {
+	font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+.footer-section {
+  text-align: center;
+  background-color: #d9d9d9;
+	padding-bottom: 3%;
+}
+
 /******************************** FOOTER END*********************************/
